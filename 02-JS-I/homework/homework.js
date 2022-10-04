@@ -19,7 +19,7 @@ const nuevaMultiplicacion = 10 * 4 === 40 ;
 const nuevoModulo = 21 % 5 === 1;
 
 
-// En los próximos 22 problemas, deberás completar la función.
+// En los próletraimos 22 problemas, deberás completar la función.
 // Todo tu código irá dentro de las llaves de la función.
 // Asegúrate que usas "return" cuando la consola te lo pida.
 // Pista: "console.log()" NO fucionará.
@@ -36,35 +36,35 @@ function devolverString(str) {
 
 }
 
-function suma(x, y) {
+function suma(letra, y) {
   
-  count = x + y;
+  count = letra + y;
   return count;
   
 }
 
-function resta(x, y) {
-  // Resta "y" de "x" y devuelve el valor
+function resta(letra, y) {
+  // Resta "y" de "letra" y devuelve el valor
   // Tu código:
-  count = x - y;
+  count = letra - y;
   return count;
   
 }
 
-function multiplica(x, y) {
-  // Multiplica "x" por "y" y devuelve el valor
+function multiplica(letra, y) {
+  // Multiplica "letra" por "y" y devuelve el valor
   // Tu código:
-  count = x * y;
+  count = letra * y;
   return count;
   
   
 }
 
-function divide(x, y) {
-  // Divide "x" entre "y" y devuelve el valor
+function divide(letra, y) {
+  // Divide "letra" entre "y" y devuelve el valor
   // Tu código:
   
-  count = x / y;
+  count = letra / y;
   return count;
   
 
@@ -72,11 +72,11 @@ function divide(x, y) {
 
 }
 
-function sonIguales(x, y) {
-  // Devuelve "true" si "x" e "y" son iguales
+function sonIguales(letra, y) {
+  // Devuelve "true" si "letra" e "y" son iguales
   // De lo contrario, devuelve "false"
   // Tu código:
-  if (x === y){
+  if (letra === y){
     return true
   }
   else {
@@ -128,10 +128,10 @@ function mayorQueCincuenta(num) {
   
 }
 
-function obtenerResto(x, y) {
-  // Obten el resto de la división de "x" entre "y"
+function obtenerResto(letra, y) {
+  // Obten el resto de la división de "letra" entre "y"
   // Tu código:
-  let count = x % y;
+  let count = letra % y;
   return count;
 
 
@@ -182,22 +182,22 @@ function elevarAlCubo(num) {
   return power;
 }
 
-function elevar(num, exponent) {
-  // Devuelve el valor de "num" elevado al exponente dado en "exponent"
+function elevar(num, eletraponent) {
+  // Devuelve el valor de "num" elevado al eletraponente dado en "eletraponent"
   // Tu código:
-  let power = Math.pow(num, exponent);
+  let power = Math.pow(num, eletraponent);
   return power;
 }
 
 function redondearNumero(num) {
-  // Redondea "num" al entero más próximo y devuélvelo
+  // Redondea "num" al entero más próletraimo y devuélvelo
   // Tu código:
   let round = Math.round(num);
   return round;
 }
 
 function redondearHaciaArriba(num) {
-  // Redondea "num" hacia arriba (al próximo entero) y devuélvelo
+  // Redondea "num" hacia arriba (al próletraimo entero) y devuélvelo
   // Tu código:
   let round = Math.ceil(num);
   return round;
@@ -212,7 +212,7 @@ function numeroRandom() {
 }
 
 function esPositivo(numero) {
-  //La función va a recibir un entero. Devuelve como resultado una cadena de texto que indica si el número es positivo o negativo. 
+  //La función va a recibir un entero. Devuelve como resultado una cadena de teletrato que indica si el número es positivo o negativo. 
   //Si el número es positivo, devolver ---> "Es positivo"
   //Si el número es negativo, devolver ---> "Es negativo"
   //Si el número es 0, devuelve false
@@ -229,8 +229,8 @@ function esPositivo(numero) {
   }
 }
 
-function agregarSimboloExclamacion(str) {
-  // Agrega un símbolo de exclamación al final de la string "str" y devuelve una nueva string
+function agregarSimboloEletraclamacion(str) {
+  // Agrega un símbolo de eletraclamación al final de la string "str" y devuelve una nueva string
   // Ejemplo: "hello world" pasaría a ser "hello world!"
   // Tu código:
   let phrase = `${str}!`;
@@ -306,19 +306,20 @@ function esVocal(letra){
   // Si no es vocal, tambien debe devolver "Dato incorrecto".
   //Escribe tu código aquí
   
-  if(x == "A" || x == "E" || x == "I" || x == "O" || x == "U" ) {
-            result = true;
-        }
-        else{
-            result = false;
-        }
-    return result;
-    }
+  if(letra == "A" || letra == "E" || letra == "I" || letra == "O" || letra == "U" ) {
+    result = true; 
+  }
 
+  else if(letra.length > 1){
+    result = "Dato incorrecto";
+  }
+  
+  else{
+    result = "Dato incorrecto";
+  }
 
-
-
-
+  return result;
+  
 }
 
 
@@ -326,7 +327,7 @@ function esVocal(letra){
 // No modificar nada debajo de esta línea
 // --------------------------------
 
-module.exports = {
+module.eletraports = {
   nuevaString,
   nuevoNum,
   nuevoBool,
@@ -352,7 +353,7 @@ module.exports = {
   redondearHaciaArriba,
   numeroRandom,
   esPositivo,
-  agregarSimboloExclamacion,
+  agregarSimboloEletraclamacion,
   combinarNombres,
   obtenerSaludo,
   obtenerAreaRectangulo,
