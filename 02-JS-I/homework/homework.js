@@ -252,12 +252,18 @@ function obtenerSaludo(nombre) {
   // Toma la string "nombre" y concatena otras string en la cadena para que tome la siguiente forma:
   // "Martin" -> "Hola Martin!"
   // Tu código:
+  let string = `Hola ${nombre}!`;
+  return string;
   
 }
 
 function obtenerAreaRectangulo(alto, ancho) {
   // Retornar el area de un rectángulo teniendo su altura y ancho
   // Tu código:
+
+  let areaReactangulo = alto * ancho
+  return areaReactangulo;
+
   
 }
 
@@ -265,6 +271,10 @@ function obtenerAreaRectangulo(alto, ancho) {
 function retornarPerimetro(lado){
   //Escibe una función a la cual reciba el valor del lado de un cuadrado y retorne su perímetro.
   //Escribe tu código aquí
+
+  let perimetro = lado*4;
+  return perimetro;
+
   
 }
 
@@ -272,6 +282,9 @@ function retornarPerimetro(lado){
 function areaDelTriangulo(base, altura){
   //Desarrolle una función que calcule el área de un triángulo.
   //Escribe tu código aquí
+  let areaTriangulo = (base*altura)/2;
+  return areaTriangulo;
+
 
 }
 
@@ -280,6 +293,8 @@ function deEuroAdolar(euro){
   //Supongamos que 1 euro equivale a 1.20 dólares. Escribe un programa que reciba
   //como parámetro un número de euros y calcule el cambio en dólares.
   //Escribe tu código aquí
+  let cambio = euro*1.20; 
+  return cambio;
   
 }
 
@@ -291,6 +306,19 @@ function esVocal(letra){
   // Si no es vocal, tambien debe devolver "Dato incorrecto".
   //Escribe tu código aquí
   
+  if(x == "A" || x == "E" || x == "I" || x == "O" || x == "U" ) {
+            result = true;
+        }
+        else{
+            result = false;
+        }
+    return result;
+    }
+
+
+
+
+
 }
 
 
