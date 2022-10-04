@@ -143,12 +143,12 @@ function esPar(num) {
   // De lo contrario, devuelve "false"
   // Tu código:
 
-  let mod = num % 2;
+;
   
-  if (mod = 2){
+  if (num % 2 == 0){
     return true;
   }
-  else {
+  else{
     return false;
   }
   
@@ -158,6 +158,12 @@ function esImpar(num) {
   // Devuelve "true" si "num" es impar
   // De lo contrario, devuelve "false"
   // Tu código:
+  if (num % 2 == 0){
+    return false;
+  }
+  else{
+    return true;
+  }
   
 }
 
@@ -165,37 +171,44 @@ function elevarAlCuadrado(num) {
   // Devuelve el valor de "num" elevado al cuadrado
   // ojo: No es raiz cuadrada!
   // Tu código:
-  
+  let power = Math.pow(num, 2);
+  return power;
 }
 
 function elevarAlCubo(num) {
   // Devuelve el valor de "num" elevado al cubo
   // Tu código:
-  
+  let power = Math.pow(num, 3);
+  return power;
 }
 
 function elevar(num, exponent) {
   // Devuelve el valor de "num" elevado al exponente dado en "exponent"
   // Tu código:
-  
+  let power = Math.pow(num, exponent);
+  return power;
 }
 
 function redondearNumero(num) {
   // Redondea "num" al entero más próximo y devuélvelo
   // Tu código:
-  
+  let round = Math.round(num);
+  return round;
 }
 
 function redondearHaciaArriba(num) {
   // Redondea "num" hacia arriba (al próximo entero) y devuélvelo
   // Tu código:
+  let round = Math.ceil(num);
+  return round;
   
 }
 
 function numeroRandom() {
   //Generar un número al azar entre 0 y 1 y devolverlo
   //Pista: investigá qué hace el método Math.random()
-  
+  let random = Math.random() * 1;
+  return random;
 }
 
 function esPositivo(numero) {
@@ -203,19 +216,35 @@ function esPositivo(numero) {
   //Si el número es positivo, devolver ---> "Es positivo"
   //Si el número es negativo, devolver ---> "Es negativo"
   //Si el número es 0, devuelve false
+  let positive = Math.sign(numero);
   
+  if (positive == 1){
+    return "Es positivo";
+  }
+  else if (positive == 0){
+    return false
+  }
+  else {
+    return "Es negativo";
+  }
 }
 
 function agregarSimboloExclamacion(str) {
   // Agrega un símbolo de exclamación al final de la string "str" y devuelve una nueva string
   // Ejemplo: "hello world" pasaría a ser "hello world!"
   // Tu código:
+  let phrase = `${str}!`;
+  return phrase;
+
 }
 
 function combinarNombres(nombre, apellido) {
   // Devuelve "nombre" y "apellido" combinados en una string y separados por un espacio.
   // Ejemplo: "Soy", "Henry" -> "Soy Henry"
   // Tu código:
+
+  let string = `${nombre} ${apellido}`;
+  return string;
   
 }
 
